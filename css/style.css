@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  font-family: comic sans ms, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: #272731;
+  text-align: top;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+    margin-top: 3rem;
+    text-align: right;
+  background-color: transparent;
+  padding: 1rem 0.5rem;
+  height: auto;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  vertical-align: bottom;
+  gap: 1rem;
+  transition: all width 1s ease;
+  overflow: hidden;
+  position: relative;
+  margin-left: 20px;
+}
+
+.sidebar button {
+  margin-left: 10px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid transparent;
+  padding: 1rem;
+  width: 12rem;
+  height: auto;
+  display: inherit;
+  text-align: right;
+  align-items: left;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: visible;
+}
+
+.sidebar .texto {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: right;
+    margin-left: 1rem;
+  opacity: 0;
+  width: 0;
+  transition: opacity 1s, width 4s;
+}
+
+.sidebar button:hover {
+  background-color: #a9c9c9;
+}
+
+.sidebar button:hover .texto {
+  opacity: 1;
+  width: auto;
+}
+
+.sidebar button.activo{
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  width: fixed;
+  opacity: 1;
+}
+
+.sidebar button.activo .texto {
+  width: auto;
+  opacity: 1;
+}
+
+
+.contenido-central {
+  flex: 1;
+  padding: 2rem;
+  background: transparent;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+}
+
+.oculto {
+  display: none;
+}
+
+.ocultar-boton {
+  display: none;
+}
+
+.volver-inicio {
+  position: absolute;
+  margin-top: 32.5%;
+  right: 1166px;
+  border: white;
+}
+
+.volver-inicio button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: white;
+  transition: background-color 0.3s;
+}
+
+.volver-inicio button:hover {
+  background-color: #c7c7c7;
+  border: white;
+}
+
+.icono {
+    width: 24px;
+    height: 24px;
+}
+
+#fondo {
+    image-rendering: optimizeQuality;
+    position: absolute;
+    top: -80px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#fondo_pie {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+
+.texto-pie {
+    margin: 10px;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+}
+
+#logo-uni {
+    position: absolute;
+    top: 91%;
+    right: 80%;
+    width: 65px;
+    height: 78px; 
+}
+
+#uni-acr {
+    position: absolute;
+    top: 91%;
+    left: 80%;
+    width: 78px;
+    height: 78px; 
+}
+
+#bienvenida {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 10rem;
+    margin-right: 13rem;
+    color: rgb(230, 230, 230);
+    opacity: 0.8;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 4px rgb(0, 172, 252);
+
+}
+
+.botones-centrales {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-left: 31.5%;
+}
+
+.botones-centrales button:hover {
+  background-color: #c0e6e6;
+  color: black;
+  border: 1px solid white;
+}
+
+.btn-iframe {
+  padding: 0.8rem 2rem;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.iframe-contenedor {
+  display: flex;
+  flex-direction: row;
+  width: 150vh;
+  height: 63vh;
+  position: absolute;
+}
+
+#visor-iframe {
+  flex: 1;
+  height: 100%;
+  border: none;
+}
+
+
+#actividades {
+    text-align: center;
+}
+
+#evaluacion {
+    text-align: center;
+}
+
+#recursos {
+    text-align: center;
+}
+
+#creditos {
+  text-align: center;
+  font-size: 2.5vh; 
+  margin-left: 25vh;
+  width: 100vh;
+  height: 52vh;
+  border-radius: 100px;
+  background-color: #475275;
+  opacity: 0.8;
+}
+
+
+.btn-regresar {
+  position: absolute;
+  margin-top: 65.5vh;
+  margin-left: 25px;
+  width: 25vh;
+  height: auto;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #35357c;
+}

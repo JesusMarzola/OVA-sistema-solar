@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Sistema Solar</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>EL SISTEMA SOLAR Y SUS PLANETAS</h1>
+  </header>
+
+  <main>
+    <img src="imgs/1240681.jpg" id="fondo" alt="fondo">
+
+    <!-- BARRA LATERAL -->
+    <nav class="sidebar">
+      <button onclick="mostrarSeccion('contenido')" title="Contenido">
+        <span class="icono"><img src="imgs/269dd16fa1f5ff51accd09e7e1602267.png" width="40" height="40"></span>
+        <span class="texto">Contenido</span>
+      </button>
+
+      <button onclick="mostrarSeccion('actividades')" title="Actividades">
+        <span class="icono"><img src="imgs/activity.png" width="40" height="40"></span>
+        <span class="texto">Actividades</span>
+      </button>
+
+      <button onclick="mostrarSeccion('evaluacion')" title="Evaluación">
+        <span class="icono"><img src="imgs/icons8-exam-96.png" width="40" height="40"></span>
+        <span class="texto">Evaluación</span>
+      </button>
+
+      <button onclick="mostrarSeccion('recursos')" title="Recursos">
+        <span class="icono"><img src="imgs/icons8-resource-64.png" width="40" height="40"></span>
+        <span class="texto">Recursos</span>
+      </button>
+
+      <button onclick="mostrarSeccion('creditos')" title="Créditos">
+        <span class="icono"><img src="imgs/icons8-team-64.png" width="40" height="40"></span>
+        <span class="texto">Créditos</span>
+      </button>
+    </nav>
+
+    <!-- CONTENIDO CENTRAL -->
+    <section class="contenido-central">
+
+      <!-- Bienvenida -->
+      <div id="bienvenida">
+        <h4>
+          Bienvenido a este OVA sobre el sistema solar. Puedes empezar con el contenido del sistema solar y después resolver las actividades y evaluaciones para poner a prueba lo aprendido.
+        </h4>
+      </div>
+
+      <!-- SECCIÓN CONTENIDO -->
+      <div id="contenido" class="seccion oculto">
+        <div style="margin-left: 60px;">
+          <div style="display: flex; gap: 20px; align-items: flex-start;">
+            
+            <!-- VIDEO -->
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/8dy27u_kX1I?si=h_c9oPargw40MHrf"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+
+            <!-- TEXTO A LA DERECHA -->
+            <div style="max-width: 400px; font-size: 16px; line-height: 1.4;">
+              <h3>Video introductorio</h3>
+              <p>
+                Mira el video explicativo del tema, cuando termines puedes poner apruba tus apredizajes
+                con las actividades y luego realizar las evaluaciones, tambien puedes revisar el apartado de "recursos"
+                que contiene información extra de la tematica y curiosidades.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- SECCIÓN ACTIVIDADES -->
+      <div id="actividades" class="seccion oculto">
+        <h2>Actividades</h2>
+        <div class="botones-centrales">
+          <button class="btn-iframe" onclick="cargarIframe('https://es.educaplay.com/juego/1674306-los_planetas_del_sistema_solar.html')">Selecciona el planeta correcto</button>
+          <button class="btn-iframe" onclick="cargarIframe('https://es.educaplay.com/juego/22460475-el_sistema_solar.html')">Ordena el sistema solar</button>
+          <button class="btn-iframe" onclick="cargarIframe('https://www.educaplay.com/game/16406988-los_planetas_del_sistema_solar_para_ninos_de_educacion_primaria.html')">Preguntas “Sí” o “No”</button>
+          <button class="btn-iframe" onclick="cargarIframe('https://es.educaplay.com/juego/16062428-el_sistema_solar_y_sus_planetas.html')">Juego</button>
+        </div>
+      </div>
+
+      <!-- SECCIÓN EVALUACIÓN -->
+      <div id="evaluacion" class="seccion oculto">
+        <h2>Evaluación</h2>
+        <div class="botones-centrales">
+          <button class="btn-iframe" onclick="cargarIframe('https://es.educaplay.com/juego/3995328-evaluacion_sistema_solar.html')">Primer Test</button>
+          <button class="btn-iframe" onclick="cargarIframe('https://wordwall.net/es/embed/6a5541b833a74e8ebbf6ea778e22465d?themeId=1&templateId=5&fontStackId=0')">Segundo Test</button>
+        </div>
+      </div>
+
+      <!-- SECCIÓN RECURSOS -->
+      <div id="recursos" class="seccion oculto">
+        <h2>Recursos</h2>
+        <div class="botones-centrales">
+          <button class="btn-iframe" onclick="cargarIframe('https://www.youtube.com/embed/kkXiTmu5QzE?si=yY77jS5WnQfax2El')">¿Por qué Plutón ya no es un planeta?</button>
+          <button class="btn-iframe" onclick="cargarIframe('https://www.youtube.com/embed/hqR-vmO-7HM?si=e8QcNUEK2k8_10Gq')">Los movimientos de la Tierra y eclipses</button>
+          <button class="btn-iframe" onclick="cargarIframe('https://www.youtube.com/embed/H7_KpWMB2FQ?si=WYz3g2KJNFommC56')">Curiosidades del sistema solar</button>
+        </div>
+      </div>
+
+      <!-- SECCIÓN CRÉDITOS -->
+      <div id="creditos" class="seccion oculto">
+        <h2>Creadores del OVA</h2>
+        <p>Juan Diego Paternina Montes</p>
+        <p>Jesús Daniel Marzola</p>
+        <p>Cristian Alberto Tapias</p>
+
+        <h2>Recursos utilizados</h2>
+        <p>YouTube</p>
+        <p>EducaPlay</p>
+        <p>Wordwall</p>
+      </div>
+
+      <!-- PANEL DEL IFRAME -->
+      <div id="iframe-panel" class="iframe-contenedor oculto">
+        <iframe id="visor-iframe" src="" frameborder="0"></iframe>
+      </div>
+
+    </section>
+
+    <button id="btn-regresar" class="btn-regresar ocultar-boton" onclick="regresarASeccion()">Regresar</button>
+  </main>
+
+  <footer>
+    <p class="texto-pie">UNIVERSIDAD DE CÓRDOBA - Acreditada</p>
+    <img src="imgs/900w-K7T11UxspbU.png" id="fondo_pie" alt="">
+    <img src="imgs/Escudo-Universidad-de-Cordoba-1.png" id="logo-uni" alt="">
+    <img src="imgs/unicordoba_acreditada.png" id="uni-acr" alt="">
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
